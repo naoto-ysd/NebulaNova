@@ -2,15 +2,18 @@
   <div class="container">
     <h1>Welcome to My Nuxt + TypeScript App</h1>
     <p>This is a simple Nuxt 3 application using TypeScript.</p>
-    <button @click="handleClick">Click Me</button>
+    <MyButton label="Click Me" @click="handleClick" />
   </div>
 </template>
 
 <script setup lang="ts">
+import MyButton from '~/components/MyButton.vue'
+
 const handleClick = (): void => {
-  console.log('Button clicked!')
+  console.log('MyButton clicked!')
 }
 </script>
+
 
 <style scoped>
 .container {
