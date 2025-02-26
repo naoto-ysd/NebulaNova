@@ -1,8 +1,8 @@
 <template>
-    <button class="my-button" @click="$emit('click')">
-      {{ label }}
-    </button>
-  </template>
+  <button class="my-button" @click="$emit('click')">
+    {{ label }}
+  </button>
+</template>
   
   <script setup lang="ts">
   import { defineProps } from 'vue'
