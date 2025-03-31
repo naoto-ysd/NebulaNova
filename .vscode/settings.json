@@ -1,17 +1,18 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "@biomejs/biome",
+  "editor.defaultFormatter": "biomejs.biome",
   "editor.codeActionsOnSave": {
-    "source.organizeImports.biome": "explicit",
-    "quickfix.biome": "explicit"
+    "source.organizeImports.biome": "always",
+    "quickfix.biome": "always"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "@biomejs/biome"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "@biomejs/biome"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[vue]": {
-    "editor.defaultFormatter": "@biomejs/biome"
-  }
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "files.autoSave": "onFocusChange"
 }

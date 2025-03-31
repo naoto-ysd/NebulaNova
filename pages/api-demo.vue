@@ -7,10 +7,10 @@
 </template>
   
 <script setup lang="ts">
-const { data, error } = await useFetch<{ message: string }>('/api/hello')
+const { data, error } = await useFetch<{ message: string }>('/api/hello');
 
 if (error.value) {
-  console.error('Error fetching API:', error.value)
+  console.error('Error fetching API:', error.value);
 }
 </script>
 
